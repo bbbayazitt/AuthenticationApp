@@ -8,7 +8,7 @@ namespace AuthenticationApp.Models
         [StringLength(100)]
         [MaxLength(100)]
         [Required]
-        public string? Name { get; set; }
+        public string? thisName { get; set; }
 
         [Required]
         public string? Adress {  get; set; }
