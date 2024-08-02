@@ -7,7 +7,7 @@ namespace AuthenticationApp.Data // declares namespace for the code.
 {
     public class AppDbContext : IdentityDbContext<AppUser> //automatically includes all the database tables and relationship needed for user authentication.
     {
-        public AppDbContext(DbContextOptions<DbContext> options) :base(options) 
+        public AppDbContext(DbContextOptions<AppDbContext> options) :base(options) 
         { 
         
         }
