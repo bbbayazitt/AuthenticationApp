@@ -11,7 +11,7 @@ namespace AuthenticationApp.Models
         public string? thisName { get; set; }
 
         [Required]
-        public string? Adress {  get; set; }
+        public string? Address {  get; set; }
 
     }
 }

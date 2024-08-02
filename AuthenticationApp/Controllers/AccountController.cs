@@ -64,9 +64,9 @@ namespace AuthenticationApp.Controllers
                     thisName = model.Name,
                     UserName = model.Email,
                     Email = model.Email,
-                    Adress = model.Address
+                    Address = model.Address
                 };
-                var result = await _userManager.CreateAsync(appUser, model.Password);
+                var result = await _userManager.CreateAsync(appUser, model.Password!);
                 if (result.Succeeded)
                 {
                     await _signInManager.SignInAsync(appUser, false);
