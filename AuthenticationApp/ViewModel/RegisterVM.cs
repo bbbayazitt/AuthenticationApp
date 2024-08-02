@@ -20,6 +20,6 @@ namespace AuthenticationApp.ViewModel
         [DataType(DataType.Password)]
         public string? ConfirmPassword { get; set; }
 
-        public string? Adress { get; set; }
+        public string? Address { get; set; }
     }
 }
